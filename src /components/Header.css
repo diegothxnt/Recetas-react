@@ -1,0 +1,70 @@
+.app-header {
+  background: linear-gradient(135deg, #09030f 0%, #07dd07 100%);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo p {
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .logo h1 {
+    font-size: 22px;
+  }
+  
+  .logo p {
+    font-size: 13px;
+  }
+}
